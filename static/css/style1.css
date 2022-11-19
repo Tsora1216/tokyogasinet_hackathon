@@ -90,7 +90,7 @@
     font-size : 14px ;
     margin : 16px 0 8px ;
 }
-.account{
+/*.account{
     position : relative ;
     z-index : 1 ;
     display : block ;
@@ -99,6 +99,7 @@
     color : #ddd ;
     margin : 0 0 32px 0 ;
 }
+
 .text{
     position : relative ;
     width : 100% ;
@@ -107,7 +108,8 @@
     border-radius : 8px ;
     transition : all ease 1s ;
 }
-.link{
+*/
+.amount{
     z-index : 4 ;
     display : flex ;
     justify-content : center ; 
@@ -201,6 +203,8 @@
     radial-gradient(at 7% 69%, hsla(200,45%,39%,1) 0px, transparent 50%),
     radial-gradient(at 0% 0%, hsla(191,52%,49%,1) 0px, transparent 50%);
     font-family : sans-serif ;
+    margin-left: auto;
+    margin-right: auto;
 }
 .circle{
     position : absolute ;

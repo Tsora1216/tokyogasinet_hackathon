@@ -7,6 +7,7 @@ app = Flask(__name__,static_folder="static")
 #ルーティング定義
 @app.route("/")
 def top():
+    
     return render_template( 
         "sample.html",
         title="サンプル",
