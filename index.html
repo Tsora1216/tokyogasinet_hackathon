@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 
+
+
 <html lang = "ja">
 <head>
     <meta charset="UTF-8">
@@ -8,7 +10,6 @@
     <title>Web版貯金箱</title>
 </head>
 <body>
-    <h2>{{title}}</h2>
     <header>
     </header>
     <main>
@@ -18,20 +19,12 @@
         <button onclick = "increase_ten()">10</button>
         <button onclick = "increase_hundred()">100</button>
         <button onclick = "increase_fivehundred()">500</button>
-
-        <button type="button" onclick="location.href='/change'">ページリンク</button>
-        
         </div>
         </div>
         <div id = "amount"></div>
-
-        <script src = "./api_test_sora/click_function.js"></script>
-
-        <div>{{message}}</div>
+        <script src = "click_function.js"></script>
     </main>
     <footer>
     </footer>
-
-
 </body>
 </html>
