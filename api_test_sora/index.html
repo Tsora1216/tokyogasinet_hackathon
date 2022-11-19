@@ -8,6 +8,7 @@
     <title>Web版貯金箱</title>
 </head>
 <body>
+    <h2>{{title}}</h2>
     <header>
     </header>
     <main>
@@ -17,15 +18,19 @@
         <button onclick = "increase_ten()">10</button>
         <button onclick = "increase_hundred()">100</button>
         <button onclick = "increase_fivehundred()">500</button>
-        <button onclick = "api_test()">api</button>
+        <button type="button" onclick="location.href='/sample'">ページリンク</button>
         
         </div>
         </div>
         <div id = "amount"></div>
 
-        <script src = "click_function.js"></script>
+        <script src = "./api_test_sora/click_function.js"></script>
+
+        <div>{{message}}</div>
     </main>
     <footer>
     </footer>
+
+
 </body>
 </html>

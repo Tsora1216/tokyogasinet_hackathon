@@ -9,10 +9,25 @@ app = Flask(__name__,static_folder="static")
 def top():
     
     return render_template( 
-        "sample.html",
+        "index.html",
         title="サンプル",
         message = "あいうえお"
     )
-
 #プログラム起動
 app.run(host="localhost",port=5000,debug=True)
+
+
+@app.route("/sample")
+def top2():
+    
+    num = 1+1;
+
+    return render_template( 
+        "index.html",
+        title="サンプル",
+        message = f"{num}"
+
+    )
+#プログラム起動
+app.run(host="localhost",port=5000,debug=True)
+
