@@ -1,3 +1,3 @@
 # tokyogasinet_hackathon
 
-案をとりあえずまとめていきます、
+ハッカソン用レポジトリ
