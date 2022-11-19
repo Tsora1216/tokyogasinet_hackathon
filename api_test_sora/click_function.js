@@ -30,5 +30,5 @@ function api_test(){
     };
  
     request.send();
-    return data;
+    //return data;
 }
