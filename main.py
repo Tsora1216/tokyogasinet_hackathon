@@ -2,7 +2,8 @@ from flask import Flask,render_template ,request
 import requests
 import random
 
-
+global num
+num=0
 
 #Flaskのコンストラクタ
 app = Flask(__name__,static_folder="static")
@@ -10,8 +11,7 @@ app = Flask(__name__,static_folder="static")
 #ルーティング定義
 @app.route("/")
 def top():
-    global num
-    num=0
+    
     
     return render_template( 
         "sawano-1.html",
@@ -30,11 +30,13 @@ comment500 = ["500円貯金しました！将来の君も喜んでるよ🤭","�
 def change1():
 
     username = request.form["usernames"]
+    global num
+    
 
     return render_template( 
         "shake1.html",
         title="自分で作る宝箱",
-        message = 0,
+        message = num,
         message2 = f"どんどん貯金しちゃおう！今の貯金が将来のあなたの幸せに🥰",
         name = f"{username}"
     )
@@ -94,7 +96,7 @@ def change4():
 def change5():
     global num
     global comment500
-    num = num+500
+    num = num + 500
 
     number = random.randint(0, 3)
 
