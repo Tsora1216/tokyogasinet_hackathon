@@ -3,8 +3,6 @@ import requests
 import random
 
 
-num=0
-
 
 #Flaskのコンストラクタ
 app = Flask(__name__,static_folder="static")
@@ -12,6 +10,8 @@ app = Flask(__name__,static_folder="static")
 #ルーティング定義
 @app.route("/")
 def top():
+    global num
+    num=0
     
     return render_template( 
         "sawano-1.html",
