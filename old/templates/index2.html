@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html lang = "ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=0.8,maximum-scale=2"><!--レスポンシブデザイン-->
+    <link rel="stylesheet" href="chokinbako.css">
+    <title>Web版貯金箱</title>
+</head>
+<body>
+    <h2>{{title}}</h2>
+    <header>
+    </header>
+    <main>
+        <div id = "container">
+        <div id = "buttons">
+        <button onclick = "increase_one()">1</button>
+        <button onclick = "increase_ten()">10</button>
+        <button onclick = "increase_hundred()">100</button>
+        <button onclick = "increase_fivehundred()">500</button>
+        <a href="/change">ページ変更</a>
+        <!--<button type="button" onclick="location.href='/sample'">ページリンク</button>-->
+        
+        </div>
+        </div>
+        <div id = "amount"></div>
+
+        <script src = "./api_test_sora/click_function.js"></script>
+
+        <div>{{message}}</div>
+    </main>
+    <footer>
+    </footer>
+
+
+</body>
+</html>
