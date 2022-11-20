@@ -1,12 +1,13 @@
 
+
 .h2 {
-    color: #08f5e3;
-    background-color: #6c5a5ae3;
+    color: #ebf1f1;
+    background-color: hsla(191,52%,49%,1);
     align-items: center;
     position: absolute;
-    left: 426px;
-    top: -26px;
-    font-size: 61px;
+    left: 504px;
+    top: -7px;
+    font-size: 42px;
 }
 
 
