@@ -14,10 +14,10 @@ app = Flask(__name__,static_folder="static")
 def top():
     
     return render_template( 
-        "shake1.html",
-        title="Web版貯金箱",
-        message = 0,
-        message2 = f"どんどん貯金しちゃおう！今の貯金が将来のあなたの幸せに🥰"
+        "sawano-1.html",
+        #title="Web版貯金箱",
+        #message = 0,
+        #message2 = f"どんどん貯金しちゃおう！今の貯金が将来のあなたの幸せに🥰"
     )
 
 comment10 = ["10円貯金しました！貯金してくれてありがとう😄","貯金偉いね！将来の君も喜んでるよ😊","積み重ねると車買えるかもよ😏","貯金おめでとう！積み重ねが大事だよ😎"]
@@ -25,6 +25,19 @@ comment50 = ["50円貯金しました！今日も一日お疲れ様😄","この
 comment100 = ["100円貯金しました！貯金おめでとう😄","貯金お疲れ様！今日はゆっくり休んでね😇","10回貯めれば、1000円になるよ🤔","貯金ありがとう！毎日頑張ってて、すごいよ😍"]
 comment500 = ["500円貯金しました！将来の君も喜んでるよ🤭","いつか車買えるかも🚗","貯金頑張って、誕生日に美味しいもの食べよ🥳","貯金頑張ってて本当にえらい！将来のために頑張ろう😊"]
 
+
+@app.route("/change1",methods=["POST"])
+def change1():
+
+    username = request.form["usernames"]
+
+    return render_template( 
+        "shake1.html",
+        title="Web版貯金箱",
+        message = 0,
+        message2 = f"どんどん貯金しちゃおう！今の貯金が将来のあなたの幸せに🥰",
+        name = f"{username}"
+    )
 
 
 @app.route("/change2")
