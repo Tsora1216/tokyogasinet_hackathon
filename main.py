@@ -15,7 +15,7 @@ def top():
     
     return render_template( 
         "sawano-1.html",
-        #title="Web版貯金箱",
+        title="自分で作る宝箱"
         #message = 0,
         #message2 = f"どんどん貯金しちゃおう！今の貯金が将来のあなたの幸せに🥰"
     )
@@ -33,7 +33,7 @@ def change1():
 
     return render_template( 
         "shake1.html",
-        title="Web版貯金箱",
+        title="自分で作る宝箱",
         message = 0,
         message2 = f"どんどん貯金しちゃおう！今の貯金が将来のあなたの幸せに🥰",
         name = f"{username}"
@@ -51,7 +51,7 @@ def change2():
 
     return render_template( 
         "shake1.html",
-        title="Web版貯金箱",
+        title="自分で作る宝箱",
         message = num,
         message2 = comment10[number]
     )
@@ -68,7 +68,7 @@ def change3():
 
     return render_template( 
         "shake1.html",
-        title="Web版貯金箱",
+        title="自分で作る宝箱",
         message = num,
         message2 = comment50[number]
     )
@@ -84,7 +84,7 @@ def change4():
 
     return render_template( 
         "shake1.html",
-        title="Web版貯金箱",
+        title="自分で作る宝箱",
         message = num,
         message2 = comment100[number]
     )
@@ -101,7 +101,7 @@ def change5():
 
     return render_template( 
         "shake1.html",
-        title="Web版貯金箱",
+        title="自分で作る宝箱",
         message = num,
         message2 = comment500[number]
     )
