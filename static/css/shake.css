@@ -1,11 +1,18 @@
 
 
+.tytle{
+    color: #ebf1f1;
+    background: hsla(191,52%,49%,1);
+}
+
 .h2 {
+    /*
     color: #ebf1f1;
     background-color: hsla(191,52%,49%,1);
+    */
     align-items: center;
-    position: absolute;
-    left: 504px;
+    /*position: absolute;
+    left: 504px;*/
     top: -7px;
     font-size: 42px;
 }
@@ -292,8 +299,8 @@
 /* 本体には関係ないスタイル */
 .container{
     position : relative ;
-    width : 600px ;
-    height : 600px ;
+    width: 608px;
+    height: 661px;
     display : flex ;
     flex-direction : column ;
     justify-content : center ;
@@ -310,7 +317,7 @@
     font-family : sans-serif ;
     margin-left: auto;
     margin-right: auto;
-    top: 120px;
+    top: 42px;
 }
 .circle{
     position : absolute ;
